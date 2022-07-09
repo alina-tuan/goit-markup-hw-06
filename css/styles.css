@@ -330,11 +330,10 @@ a {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.imput-field .label-img:focus {
+.modal-form .label:focus-within>.modal-form .label-img,
+.modal-form .labe:hover>.modal-form .label-img {
     fill: var(--accent-color);
 }
-
 .comment {
     height: 120px;
     padding: 12px 16px;
