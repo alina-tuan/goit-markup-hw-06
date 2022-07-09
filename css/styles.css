@@ -297,6 +297,9 @@ a {
     flex-direction: column;
     margin-bottom: 10px;
 }
+.modal-form :nth-child(4) {
+    margin-bottom: 17px;
+}
 .label-box {
     position: relative;
 }
@@ -309,21 +312,26 @@ a {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     outline: transparent;
 }
 .imput-field:focus {
     border-color: var(--accent-color);
-}
+} 
 .label-img {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 15px;
     width: 18px;
     height: 18px;
-    
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    fill: var(--black-color);
+
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-img:focus {
+
+.imput-field .label-img:focus {
     fill: var(--accent-color);
 }
 
@@ -344,6 +352,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .form-agreement-custom {
     display: inline-flex;
@@ -379,6 +388,9 @@ a {
 
     user-select: none;
 }
+.icon-agreement {
+    fill: var(--white-color);
+}
 .agreement-link {
     font-weight: 400;
     font-size: 14px;
@@ -389,6 +401,32 @@ a {
     
     color: var(--accent-color);
 }
+.modal-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    padding: 10px 56px;
+    margin: 0 auto;
+
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #188CE8;
+}
+
     
 /* Конец модального окна */
 
