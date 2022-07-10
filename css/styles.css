@@ -265,7 +265,8 @@ a {
 
     cursor: pointer;
 }
-.modal-close-button:focus svg {
+.modal-close-button:focus svg,
+.modal-close-button:hover svg {
      fill: var(--accent-color);
 }
 .modal-form {
@@ -334,7 +335,8 @@ a {
 .modal-form .labe:hover>.modal-form .label-img {
     fill: var(--accent-color);
 } */
-.imput-field:focus + .label-img {
+.imput-field:focus + .label-img,
+.imput-field:hover +.label-img {
     fill: var(--accent-color);
 }
 .comment {
