@@ -330,8 +330,11 @@ a {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form .label:focus-within>.modal-form .label-img,
+/* .modal-form .label:focus-within>.modal-form .label-img,
 .modal-form .labe:hover>.modal-form .label-img {
+    fill: var(--accent-color);
+} */
+.imput-field:focus + .label-img {
     fill: var(--accent-color);
 }
 .comment {
